@@ -16,10 +16,6 @@ From: timo-singularity/sherpa
   pip3 --no-cache-dir install matplotlib pandas seaborn
   pip3 --no-cache-dir install ipykernel jupyterlab
   
-  # we need to downgrade jedi, as there is a problem with auto-completion
-  # in the current jupyter
-  pip3 --no-cache-dir install jedi==0.17.1
-
   pip3 --no-cache-dir install numdifftools nflows
   pip3 --no-cache-dir install gvar
   git clone https://gitlab.com/tjansse/vegas.git
