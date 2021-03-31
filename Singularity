@@ -21,5 +21,9 @@ From: timo-singularity/sherpa
   git clone https://gitlab.com/tjansse/vegas.git
   pip3 install ./vegas
 
+   # we need to downgrade jedi, as there is a problem with auto-completion
+  # in the current jupyter
+  pip3 --no-cache-dir install jedi==0.17.2
+
   ldconfig
   yum clean all
