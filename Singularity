@@ -22,6 +22,8 @@ From: timo-singularity/sherpa
   conda update -y -n base conda
   conda create -y -c pytorch -c conda-forge -n pytorch cython numpy scipy pytorch torchvision torchaudio cudatoolkit=11.1 matplotlib pandas seaborn ipykernel jupyterlab numdifftools joblib
   rm miniconda.sh -f
+  source /conda/etc/profile.d/conda.sh
+  conda activate pytorch
   pip --no-cache-dir install nflows gvar
   git clone https://gitlab.com/tjansse/vegas.git
   pip install ./vegas
